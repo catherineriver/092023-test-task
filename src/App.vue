@@ -47,8 +47,6 @@ export default {
 }
 
 .action-field {
-  git branch -M main
-  git push -u origin main
   overflow: scroll;
   margin: 0 8px;
 }
