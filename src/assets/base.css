@@ -1,0 +1,182 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+    --vt-c-white: #ffffff;
+    --vt-c-white-soft: #f8f8f8;
+    --vt-c-white-mute: #f2f2f2;
+
+    --vt-c-black: #333333;
+    --vt-c-black-soft: #222222;
+    --vt-c-black-mute: rgb(41, 41, 41);
+    --vt-c-dark: rgb(59, 58, 58);
+
+    --vt-c-dark-softest: #4a4a4a;
+    --vt-c-dark-medium: #3a3a3a;
+    --vt-c-dark-deeper: #2a2a2a;
+    --vt-c-accent: #4c669f;
+    --vt-c-accent-hover: #5e81ac;
+
+    --lt-c-primary: #E0E8F9; /* Soft blue */
+    --lt-c-secondary: #FFE4D9; /* Soft peach */
+    --lt-c-accent: #A8DADC; /* Pastel teal */
+    --lt-c-neutral: #EAEAEA; /* Light gray */
+    --lt-c-text: #333333; /* Almost black for text */
+    --lt-c-text-muted: #7D7D7D; /* Muted text color */
+    --lt-c-border: #D1D1D1; /* Light border color */
+    --lt-c-input-bg: #F5F5F5; /* Input background */
+    --lt-c-button-hover: #D6E5F3; /* Button hover color */
+
+    --vt-c-indigo: #007bff;
+
+    --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+    --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+    --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+    --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+    --vt-c-text-light-1: var(--vt-c-indigo);
+    --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+    --vt-c-text-dark-1: var(--vt-c-white);
+    --vt-c-text-dark-2: rgb(59, 58, 58);
+}
+
+/* semantic color variables for this project */
+:root {
+    --color-background: var(--lt-c-neutral);
+    --color-background-soft: var(--lt-c-neutral);
+    --color-background-mute: var(--vt-c-white-mute);
+
+    --color-border: var(--vt-c-indigo);
+    --color-border-hover: var(--vt-c-divider-light-1);
+
+    --color-heading: var(--vt-c-black-soft);
+    --color-text: var(--vt-c-black-soft);
+
+    --color-section-background: var(--color-background-mute);
+    --color-card-background: var(--color-background-soft);
+
+    --section-gap: 160px;
+}
+
+[data-theme="dark"] {
+    --color-background: var(--vt-c-dark-medium);
+    --color-background-soft: var(--vt-c-dark-softest);
+    --color-background-mute: var(--vt-c-dark-deeper);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-accent);
+
+    --color-section-background: var(--color-background-mute);
+    --color-card-background: var(--vt-c-dark-softest);
+
+    --color-heading: var(--vt-c-accent);
+    --color-text: var(--vt-c-white-mute);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    font-weight: normal;
+}
+
+body {
+    min-height: 100vh;
+    color: var(--color-text);
+    background: var(--color-background);
+    transition: color 0.5s, background-color 0.5s;
+    line-height: 1.6;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a, button {
+    color: var(--vt-c-white-mute);
+    transition: background-color 0.3s;
+    background: var(--vt-c-accent);
+}
+
+a:hover, button:hover {
+    background: var(--vt-c-accent-hover);
+}
+
+button {
+    width: 100%;
+    font-size: 16px;
+    height: 44px;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+
+    border-radius: 8px;
+}
+
+input, textarea, select {
+    background-color: var(--lt-c-input-bg);
+    border-color: var(--lt-c-border);
+    color: var(--lt-c-text);
+    border: none;
+
+    border-radius: 8px;
+    width: 100%;
+    height: 32px;
+    padding: 0 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    min-width: 70px;
+}
+
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--lt-c-accent);
+    box-shadow: 0 0 0 0.2rem rgba(168, 218, 220, 0.5);
+}
+
+label {
+    font-size: 16px;
+    max-width: 50px;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    padding: 8px 16px 16px 16px;
+    background: var(--color-section-background);
+    border-radius: 16px;
+    height: fit-content;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.inputs-block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    padding: 8px 16px;
+    background: var(--color-card-background);
+    border-radius: 16px;
+}
+
+.input-component {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 8px;
+}
+
+.button-block {
+    display: flex;
+    flex-direction: row;
+}
