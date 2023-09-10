@@ -1,31 +1,66 @@
-# printful-test-task
+# 092023 Test Task
 
-This template should help get you started developing with Vue 3 in Vite.
+This repository contains the codebase for the test task dated 09/2023.
+The project is developed using Vue 3 and Vite.
 
-## Recommended IDE Setup
+## Project Overview
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+![img.png](img.png)
 
-## Customize configuration
+The project is a Vue application that demonstrates the logic for recalculating positions.
+It's designed to showcase best practices, efficient coding techniques, and modern development patterns.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Getting Started
 
-## Project Setup
+### Prerequisites
 
-```sh
+- Node.js
+- npm
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/catherineriver/092023-test-task.git
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd 092023-test-task
+```
+
+3. Install the required dependencies:
+
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+## Development
 
-```sh
+To start the development server with hot-reloading:
+
+```bash
 npm run dev
 ```
 
-### Compile and Minify for Production
+## Building for Production
 
-```sh
+To compile and minify the project for production:
+
+```bash
 npm run build
 ```
-# 092023-test-task
-# 092023-test-task
+
+## Recommended IDE Setup
+
+It's recommended to use [VSCode](https://code.visualstudio.com/) with the following extensions for the best development
+experience:
+
+- [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (Make sure to disable Vetur)
+- [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin)
+
+## Configuration
+
+For custom configurations, refer to the [Vite Configuration Reference](https://vitejs.dev/config/).
