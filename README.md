@@ -1,5 +1,7 @@
 # 092023 Test Task
 
+[The project deployed with Vercel](https://092023-test-task-soxl.vercel.app/)
+
 This repository contains the codebase for the test task dated 09/2023.
 The project is developed using Vue 3 and Vite.
 
